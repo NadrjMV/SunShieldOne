@@ -248,20 +248,11 @@
         @media (max-width: 992px) {
             .top-row { grid-template-columns: 1fr; }
             .bottom-row { grid-template-columns: 1fr 1fr; }
-             /* Move o terceiro card da linha de baixo para uma nova linha */
-            .bottom-row .system-card:last-child {
-                grid-column: 1 / -1; /* Ocupa a largura toda */
-                max-width: 50%; /* Limita a largura para ficar alinhado */
-                justify-self: center; /* Centraliza o card */
-            }
         }
 
         @media (max-width: 768px) {
             .header h1 { font-size: 2rem; }
             .bottom-row { grid-template-columns: 1fr; }
-             .bottom-row .system-card:last-child {
-                max-width: 100%; /* Ocupa a largura total em telas menores */
-            }
             .featured-card { flex-direction: column; align-items: flex-start; gap: 1rem; }
             .featured-card .card-icon { width: 64px; height: 64px; font-size: 2.5rem; }
         }
@@ -291,6 +282,24 @@
                             <div class="card-button">Ver Plantões</div>
                         </div>
                     </a>
+                    <a href="https://nadrjmv.github.io/SunCalls" target="_blank" class="system-card" style="--card-accent-color: var(--accent-purple);">
+                        <div class="card-icon" style="--grad-from: #f3e5f5; --grad-to: #e1bee7;"><i class="fas fa-headset"></i></div>
+                        <h2 class="card-title">Plataforma de Chamados</h2>
+                        <p class="card-brand">SunCalls</p>
+                        <p class="card-description">Gestão e comunicação centralizadas para agilizar suas solicitações internas.</p>
+                        <div class="card-button">Abrir Chamado</div>
+                    </a>
+                </div>
+
+                <div class="grid-row bottom-row">
+                    <a href="https://nadrjmv.github.io/SunPeryo" target="_blank" class="system-card" style="--card-accent-color: var(--accent-orange);">
+                        <div class="card-icon" style="--grad-from: #fff3e0; --grad-to: #ffe0b2;"><i class="fas fa-shield-halved"></i></div>
+                        <h2 class="card-title">Gestão de Rondas</h2>
+                        <p class="card-brand">SunPeryo</p>
+                        <p class="card-description">Registre rondas com fotos / QR Codes e dashboards para supervisão.</p>
+                        <div class="card-button">Iniciar Ronda</div>
+                    </a>
+                    
                     <a href="https://nadrjmv.github.io/SunPlan/" target="_blank" class="system-card" style="--card-accent-color: var(--accent-blue);">
                         <div class="card-icon" style="--grad-from: #e1f5fe; --grad-to: #b3e5fc;"><i class="fas fa-clock"></i></div>
                         <h2 class="card-title">Controle de Horas</h2>
@@ -298,15 +307,13 @@
                         <p class="card-description">Gerencie seu banco de horas e registre seus pontos.</p>
                         <div class="card-button">Gerenciar Horas</div>
                     </a>
-                </div>
-
-                <div class="grid-row bottom-row">
-                    <a href="https://nadrjmv.github.io/SmartRoute" target="_blank" class="system-card" style="--card-accent-color: var(--accent-orange);">
-                        <div class="card-icon" style="--grad-from: #fff3e0; --grad-to: #ffe0b2;"><i class="fas fa-shield-halved"></i></div>
-                        <h2 class="card-title">Gestão de Rondas</h2>
-                        <p class="card-brand">SmartRoute</p>
-                        <p class="card-description">Registre rondas com fotos / QR Codes e dashboards para supervisão.</p>
-                        <div class="card-button">Iniciar Ronda</div>
+                    
+                    <a href="https://nadrjmv.github.io/sun" target="_blank" class="system-card" style="--card-accent-color: var(--brand-blue-dark);">
+                        <div class="card-icon" style="--grad-from: #e3f2fd; --grad-to: #cce7ff;"><i class="fas fa-file-powerpoint"></i></div>
+                        <h2 class="card-title">Apresentação Institucional</h2>
+                        <p class="card-brand">Sun Shield</p>
+                        <p class="card-description">Conheça nossa história, diferenciais, áreas de atuação e empresas parceiras.</p>
+                        <div class="card-button">Ver Apresentação</div>
                     </a>
 
                     <a href="https://nadrjmv.github.io/SunTalk/index.html" target="_blank" class="system-card" style="--card-accent-color: var(--accent-purple);">
